@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+    font-family: 'Poppins' sans serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+    background: linear-gradient(90deg, rgb(0, 0, 0) 30%, #ca00ca 100%);
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: linear-gradient(90deg, #8a2be2 0%, #ff00ff 100%);
+    height: 140px;
+    box-shadow: 0 0 40px 10px #8a2be2, 0 0 80px 20px #ff00ff inset;
+    border-radius: 0px 0px 30px 30px;
+    position: relative;
+}
+
+header img {
+    padding: 0px 30px 0px 0px;
+}
+
+#nome {
+    color: white;
+    text-shadow: 5px 5px 5px black;
+    font-size: 25px;
+    text-align: center;
+}
+
+p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background: rgba(138, 43, 226, 0.15);
+    border-radius: 20px;
+    padding: 18px 32px;
+    margin: 30px auto;
+    max-width: 700px;
+    font-size: 1.2rem;
+    font-family: 'Poppins' sans serif;
+    box-shadow: 0 4px 18px 0 rgba(138, 43, 226, 0.25);
+    letter-spacing: 0.5px;
+    line-height: 1.6;
+    text-shadow: 1px 1px 4px #000;
+    border: 2px solid #8a2be2;
+    transition: background 0.3s, box-shadow 0.3s;
+}
+
+p:hover {
+    background: rgba(138, 43, 226, 0.35);
+    box-shadow: 0 8px 32px 0 rgba(138, 43, 226, 0.45);
+}
+
+
+h1 {
+    font-size: 2.8em;
+    text-align: center;
+    color: white;
+}
+
+div {
+    text-align: center;
+    margin-top: 2em;
+}
+
+h2 {
+    color: white;
+    text-shadow: 2px 2px 2px rgb(230, 8, 230);
+    font-size: 30px;
+    text-align: center;
+}
+
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-size: 20px;
+
+}
+
+nav a {
+    font-size: 1.2rem;
+    color: white;
+    text-decoration: none;
+    border-radius: 15px 15px 15px 15px;
+    background-color: black;
+    padding: 15px;
+    border: 5px solid white;
+}
+
+
+nav a:hover {
+    background-color: white;
+    color: black;
+    border: 5px solid black;
+    box-shadow: 0 0 10px black;
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.8s;
+}
+
+#feedback {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background: rgba(138, 43, 226, 0.15);
+    border-radius: 20px;
+    padding: 18px 32px;
+    margin: 80px auto 30px auto;
+    max-width: 700px;
+    font-size: 1.2rem;
+    font-family: 'Poppins' sans serif;
+    box-shadow: 0 4px 18px 0 rgba(138, 43, 226, 0.25);
+    text-shadow: 2px 2px 4px #000;
+    border: 2px solid #8a2be2;
+    transition: background 0.3s, box-shadow 0.3s;
+}
+
+#feedback:hover {
+    background: rgba(138, 43, 226, 0.35);
+    box-shadow: 0 8px 32px 0 rgba(138, 43, 226, 0.45);
+}
+
+
+button {
+    display: block;
+    margin: 24px auto 0 auto;
+    border-color: #ff00dd;
+    border-radius: 20px;
+    background-color: #000;
+    color: #ffffff;
+    font-size: 1.3rem;
+    padding: 14px 48px;
+    font-weight: bold;
+    width: 100%;
+    max-width: 320px;
+    transition: background-color 0.5s, color 0.5s, box-shadow 1s;
+}
+
+button:hover {
+    background-color: #ffffff;
+    color: #000;
+}
+
+#footer {
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    border-radius: 30px 30px 0px 0px;
+    box-shadow: 0 40px 80px 0px rgba(255, 255, 255, 0.5);
+    position: static;
+    margin-top: 100px;
+    width: 97.3%;
+}
+
+#footer-link a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 5px;
+    font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        height: auto;
+        padding: 20px 0;
+    }
+
+    header img {
+        padding: 0;
+    }
+
+    #nome {
+        font-size: 20px;
+    }
+
+    p, #feedback {
+        margin: 20px auto;
+        padding: 15px 20px;
+        font-size: 1rem;
+    }
+
+    h1 {
+        font-size: 2.2em;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav a {
+        width: 100%;
+        text-align: center;
+    }
+}
